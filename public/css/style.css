@@ -1,0 +1,87 @@
+/*
+    --------
+    Reset
+    --------
+*/
+.container-fluid{
+    box-sizing: border-box;
+}
+
+.main-container{
+    height: 100%;
+    padding: 50px 50px;
+}
+
+/*
+    --------
+    Navbar
+    --------
+*/
+
+.navbar{
+    height: 40px;
+    width: 100%;
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+.main-logo{
+    padding-left: 5px;
+}
+
+.toggle-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.toggle-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/*
+    --------
+    Content
+    --------
+*/
+
+.container-content{
+    background-color: aqua;
+    height: 100vh;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 40px;
+}
+
+.hero-title{
+    margin-top: 0px;
+    height: 450px;
+    background-image: url('/img/card-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*
+    -------
+    section about
+    -------
+*/
+.section-about
+{
+    background: #000;
+}
+
+.about-images img{
+    width: 250px;
+    height: auto;
+}
