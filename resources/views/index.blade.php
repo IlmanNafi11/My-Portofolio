@@ -18,6 +18,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    {{-- Icon --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <title>Ilman | Home</title>
 </head>
 
@@ -58,26 +61,35 @@
         {{-- Content --}}
         <div class="container-fluid bg-dark container-content px-0 py-0">
 
-            {{-- hero --}}
+            {{-- hero section --}}
             <div class="section hero-section d-flex justify-content-center align-items-center">
                 <span class="text-uppercase text-white text-center fw-bold">Ilman Nafian <br>Mobile and web Developer
                     since 2024 in sragen, Indonesia</span>
             </div>
 
+            {{-- About section --}}
             <div class="section content-section d-flex px-3 py-4">
                 <div class="about-images pe-4">
-                    <img src="{{asset('img/its-me.jpg')}}" alt="my-foto" class="object-fit-cover w-100 h-100 d-block rounded">
+                    <img src="{{ asset('img/its-me.jpg') }}" alt="my-foto"
+                        class="object-fit-cover w-100 h-100 d-block rounded">
                 </div>
                 <div class="content-section-about">
                     <span class="header-content-section">About Me carrer</span>
-                    <p class="main-section-content text-white">My name is Ilman Nafian. I'am Mobile Developer and Web Developer from Sragen, Indonesia</p>
-                    <p class="subtitle-section-about text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt officiis, ratione eaque alias recusandae maiores nam porro delectus nisi quasi nulla esse iste sint obcaecati earum praesentium eius quam?</p>
-                    <p class="subtitle-section-about text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam id facere aperiam ipsa, quod eius molestias explicabo, repellendus architecto nostrum suscipit. Accusantium, fugit a saepe itaque quas eligendi quidem quam.</p>
-                    <img src="{{asset('img/my-sign.png')}}" alt="sign" class="d-block w-25 h-auto mb-4 mt-0 mw-100 mh-auto">
+                    <p class="main-section-content text-white">My name is Ilman Nafian. I'am Mobile Developer and Web
+                        Developer from Sragen, Indonesia</p>
+                    <p class="subtitle-section-about text-white">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Vel deserunt officiis, ratione eaque alias recusandae maiores nam porro delectus nisi
+                        quasi nulla esse iste sint obcaecati earum praesentium eius quam?</p>
+                    <p class="subtitle-section-about text-white">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Veniam id facere aperiam ipsa, quod eius molestias explicabo, repellendus architecto
+                        nostrum suscipit. Accusantium, fugit a saepe itaque quas eligendi quidem quam.</p>
+                    <img src="{{ asset('img/my-sign.png') }}" alt="sign"
+                        class="d-block w-25 h-auto mb-4 mt-0 mw-100 mh-auto">
                     <button class="btn btn-light d-block">Download CV</button>
                 </div>
             </div>
 
+            {{-- Service section --}}
             <div class="section service-section px-3 py-4">
                 <span class="header-content-section">awesome service</span>
                 <p class="main-section-content text-white">I recommed you high quality service</p>
@@ -85,29 +97,125 @@
                     <div class="container-fluid d-flex flex-row row-gap-4 flex-wrap justify-content-between px-0 py-0">
                         <div class="service-item rounded p-4">
                             <span class="header-service text-white">Web Development</span>
-                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio, beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
+                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio,
+                                beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
                         </div>
                         <div class="service-item rounded p-4">
                             <span class="header-service text-white">Web Development</span>
-                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio, beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
+                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio,
+                                beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
                         </div>
                         <div class="service-item rounded p-4">
                             <span class="header-service text-white">Web Development</span>
-                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio, beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
+                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio,
+                                beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
                         </div>
                         <div class="service-item rounded p-4">
                             <span class="header-service text-white">Web Development</span>
-                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio, beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
+                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio,
+                                beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
                         </div>
                         <div class="service-item rounded p-4">
                             <span class="header-service text-white">Web Development</span>
-                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio, beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
+                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio,
+                                beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
                         </div>
                         <div class="service-item rounded p-4">
                             <span class="header-service text-white">Web Development</span>
-                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio, beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
+                            <p class="subtitle-service text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Id unde nostrum odit incidunt delectus? Maiores quibusdam soluta distinctio,
+                                beatae cumque eaque, iste ducimus tempora neque commodi dicta earum totam expedita.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            {{-- Project Section --}}
+            <div class="section project-section px-3 py-4">
+                <span class="header-content-section text-uppercase">Creative project</span>
+                <p class="main-section-content text-white">Check out my latest project</p>
+                <div class="group-box-project d-flex flex-row row-gap-4 flex-wrap justify-content-between text-center">
+                    <div class="project-item rounded position-relative overflow-hidden p-0 m-0">
+                        <img src="{{ asset('img/card-1.jpg') }}" alt="project-images" class="img-fluid">
+                        <div class="caption-project position-absolute d-flex flex-column justify-content-center align-items-center top-0 left-0">
+                            <span class="header-project text-white">Finansial Managemen Application UD SUMBER AGUNG</span>
+                            <p class="subtitle-project text-white">Desktop based application</p>
+                        </div>
+                    </div>
+                    <div class="project-item rounded position-relative overflow-hidden p-0 m-0">
+                        <img src="{{ asset('img/card-1.jpg') }}" alt="project-images" class="img-fluid">
+                        <div class="caption-project position-absolute d-flex flex-column justify-content-center align-items-center top-0 left-0">
+                            <span class="header-project text-white">Finansial Managemen Application UD SUMBER AGUNG</span>
+                            <p class="subtitle-project text-white">Desktop based application</p>
+                        </div>
+                    </div>
+                    <div class="project-item rounded position-relative overflow-hidden p-0 m-0">
+                        <img src="{{ asset('img/card-1.jpg') }}" alt="project-images" class="img-fluid">
+                        <div class="caption-project position-absolute d-flex flex-column justify-content-center align-items-center top-0 left-0">
+                            <span class="header-project text-white">Finansial Managemen Application UD SUMBER AGUNG</span>
+                            <p class="subtitle-project text-white">Desktop based application</p>
+                        </div>
+                    </div>
+                    <div class="project-item rounded position-relative overflow-hidden p-0 m-0">
+                        <img src="{{ asset('img/card-1.jpg') }}" alt="project-images" class="img-fluid">
+                        <div class="caption-project position-absolute d-flex flex-column justify-content-center align-items-center top-0 left-0">
+                            <span class="header-project text-white">Finansial Managemen Application UD SUMBER AGUNG</span>
+                            <p class="subtitle-project text-white">Desktop based application</p>
+                        </div>
+                    </div>
+                    <div class="project-item rounded position-relative overflow-hidden p-0 m-0">
+                        <img src="{{ asset('img/card-1.jpg') }}" alt="project-images" class="img-fluid">
+                        <div class="caption-project position-absolute d-flex flex-column justify-content-center align-items-center top-0 left-0">
+                            <span class="header-project text-white">Finansial Managemen Application UD SUMBER AGUNG</span>
+                            <p class="subtitle-project text-white">Desktop based application</p>
+                        </div>
+                    </div>
+                    <div class="project-item rounded position-relative overflow-hidden p-0 m-0">
+                        <img src="{{ asset('img/card-1.jpg') }}" alt="project-images" class="img-fluid">
+                        <div class="caption-project position-absolute d-flex flex-column justify-content-center align-items-center top-0 left-0">
+                            <span class="header-project text-white">Finansial Managemen Application UD SUMBER AGUNG</span>
+                            <p class="subtitle-project text-white">Desktop based application</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Contact Section --}}
+            <div class="section contact-section px-3 py-4">
+                <span class="header-content-section text-uppercase">Contact Me</span>
+                <p class="main-section-content text-white">Get in touch with me</p>
+                <div class="container-contact-content d-flex column-gap-5">
+                    <div class="subtitle-contact d-flex flex-column row-gap-2 w-50">
+                        <span class="sub-street"><a href="#" class="text-decoration-none text-white">Masaran, Sragen, Central Java</a></span>
+                        <span class="sub-street"><a href="https://api.whatsapp.com/send/?phone=6287831620075&text&type=phone_number&app_absent=0" class="text-decoration-none text-white" target="#">+62-8232-0865-098</a></span>
+                        <span class="sub-street"><a href="#" class="text-decoration-none text-white">ilmannafi04@gmail.com</a></span>
+                        <span class="sub-street"><a href="#" class="text-decoration-none text-white">@ilmannafi4</a></span>
+                    </div>
+                    <div class="form-contact d-flex flex-column row-gap-3 w-100">
+                        <input type="text" class="form-control form-name" placeholder="Your Name" aria-label="form-name">
+                        <input type="email" class="form-control form-email" placeholder="Your email">
+                        <textarea name="" id="message-detail" rows="3" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- footer --}}
+        <div class="footer position-fixed bottom-0 left-0 right-0 w-100 align-content-center px-4">
+            <div class="footer-box d-flex justify-content-between">
+                <div class="sub-copyright text-white">
+                    <span>Copyright &copy; 2024. All Rights are Reserved</span>
+                </div>
+                <div class="sub-social-icon d-flex column-gap-2">
+                    <i class="bi bi-instagram" style="color: white; cursor: pointer;"></i>
+                    <i class="bi bi-threads" style="color: white; cursor: pointer;"></i>
+                    <i class="bi bi-linkedin" style="color: white; cursor: pointer;"></i>
+                    <i class="bi bi-github" style="color: white; cursor: pointer;"></i>
                 </div>
             </div>
         </div>
