@@ -1,4 +1,4 @@
-// script.js
+// Navbar
 document.getElementById('toggle-menu').addEventListener('click', function() {
     this.classList.toggle('active');
     const navMenu = document.getElementById('nav-menu');

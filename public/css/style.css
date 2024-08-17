@@ -29,6 +29,7 @@
     width: 100%;
     background-color: #000;
     box-sizing: border-box;
+    padding: 0 40px;
 }
 
 .toggle-menu {
@@ -115,6 +116,14 @@
     background-size: cover;
     background-position: center;
     font-family: 'Saira';
+    font-size: larger;
+}
+
+.main-sub-hero, #subtitle-hero-typed{
+    font-family: 'Saira', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: small;
 }
 
 /*
@@ -128,15 +137,37 @@
     /* background: rgb(129, 129, 228); */
 }
 
+/*
+    -------
+    About Section
+    -------
+ */
+
 .content-section .about-images{
-    width: 430px;
-    height: 310px;
+    width: 400px;
+    height: auto;
+    position: relative;
 }
 
 .about-images img{
-    box-shadow: 0px 0px 25px rgb(77, 75, 75);
-
+    /* box-shadow: 0px 0px 25px rgb(77, 75, 75); */
+    z-index: 1;
+    position: relative;
 }
+
+.about-images::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 10px;
+    width: calc(100% - 22px);
+    height: 100%;
+    transform: translateX(10px);
+    transform: translateY(10px);
+    border: 2px solid #c0c0c027;
+    z-index: 0;
+}
+
 .header-content-section{
     color: crimson;
     font-family: 'Saira';
@@ -147,6 +178,11 @@
     font-family: 'Saira';
     font-weight: 600;
     font-size: 23px;
+}
+
+.subtitle-section-about{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
 
 /*
@@ -223,6 +259,36 @@
 }
 
 /*
+    -------
+    Contact Section
+    -------
+ */
+.contact-section{
+    padding-bottom: 75px !important;
+}
+
+.subtitle-contact{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: small;
+}
+
+.form-name, .form-email, .form-message-detail{
+    border: 0 transparent;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(214, 213, 213);
+    color: white;
+}
+
+.form-name, .form-email{
+    width: 100%;
+}
+
+.form-name, .form-email, .form-message-detail:focus{
+    outline: none;
+}
+
+/*
     ------
     footer
     ------
@@ -230,6 +296,8 @@
 .footer{
     background-color: #000;
     height: 40px;
+    z-index: 2;
+    padding: 0 40px;
 }
 
 .sub-copyright{
@@ -251,6 +319,21 @@
 
     .project-item{
         flex-basis: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 667px){
+    .container-contact-content{
+        flex-direction: column;
+    }
+
+    .subtitle-contact{
+        order: 2;
+    }
+
+    .form-contact{
+        order: 1;
+        margin-bottom: 25px;
     }
 }
 

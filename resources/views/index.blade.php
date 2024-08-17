@@ -27,7 +27,7 @@
 <body>
     {{-- Container --}}
     <div class="container-fluid p-0 m-0 main-container">
-        <nav class="navbar fixed-top m-0 justify-content-between px-3 py-0">
+        <nav class="navbar fixed-top m-0 justify-content-between py-0">
             <div class="main-logo">
                 <a href="#" class="navbar-brand text-white">ILMAN</a>
             </div>
@@ -62,16 +62,19 @@
         <div class="container-fluid bg-dark container-content px-0 py-0">
 
             {{-- hero section --}}
-            <div class="section hero-section d-flex justify-content-center align-items-center">
-                <span class="text-uppercase text-white text-center fw-bold">Ilman Nafian <br>Mobile and web Developer
-                    since 2024 in sragen, Indonesia</span>
+            <div class="section hero-section d-flex flex-column justify-content-center align-items-center">
+                <span class="text-uppercase text-white text-center fw-bold">Ilman Nafian</span>
+                <div class="container-subtitle-typed">
+                    <span class="main-sub-hero">I'am</span>
+                    <span id="subtitle-hero-typed"></span>
+                </div>
             </div>
 
             {{-- About section --}}
             <div class="section content-section d-flex px-3 py-4">
                 <div class="about-images pe-4">
                     <img src="{{ asset('img/its-me.jpg') }}" alt="my-foto"
-                        class="object-fit-cover w-100 h-100 d-block rounded">
+                        class="object-fit-cover w-100 h-100 d-block">
                 </div>
                 <div class="content-section-about">
                     <span class="header-content-section">About Me carrer</span>
@@ -189,7 +192,7 @@
             <div class="section contact-section px-3 py-4">
                 <span class="header-content-section text-uppercase">Contact Me</span>
                 <p class="main-section-content text-white">Get in touch with me</p>
-                <div class="container-contact-content d-flex column-gap-5">
+                <div class="container-contact-content d-flex justify-content-between">
                     <div class="subtitle-contact d-flex flex-column row-gap-2 w-50">
                         <span class="sub-street"><a href="#" class="text-decoration-none text-white">Masaran, Sragen, Central Java</a></span>
                         <span class="sub-street"><a href="https://api.whatsapp.com/send/?phone=6287831620075&text&type=phone_number&app_absent=0" class="text-decoration-none text-white" target="#">+62-8232-0865-098</a></span>
@@ -197,16 +200,19 @@
                         <span class="sub-street"><a href="#" class="text-decoration-none text-white">@ilmannafi4</a></span>
                     </div>
                     <div class="form-contact d-flex flex-column row-gap-3 w-100">
-                        <input type="text" class="form-control form-name" placeholder="Your Name" aria-label="form-name">
-                        <input type="email" class="form-control form-email" placeholder="Your email">
-                        <textarea name="" id="message-detail" rows="3" class="form-control"></textarea>
+                        <div class="form-bio d-flex justify-content-between column-gap-4">
+                            <input name="" type="text" class="form-name" placeholder="Your Name" aria-label="form-name">
+                            <input name="" type="email" class="form-email" placeholder="Your email">
+                        </div>
+                        <input name="" id="message-detail" class="form-message-detail" placeholder="Your Message"></input>
+                        <button class="btn btn-light" style="height: 38px; width: 76px">Sumbit</button>
                     </div>
                 </div>
             </div>
         </div>
 
         {{-- footer --}}
-        <div class="footer position-fixed bottom-0 left-0 right-0 w-100 align-content-center px-4">
+        <div class="footer position-fixed bottom-0 left-0 right-0 w-100 align-content-center">
             <div class="footer-box d-flex justify-content-between">
                 <div class="sub-copyright text-white">
                     <span>Copyright &copy; 2024. All Rights are Reserved</span>
@@ -215,7 +221,8 @@
                     <i class="bi bi-instagram" style="color: white; cursor: pointer;"></i>
                     <i class="bi bi-threads" style="color: white; cursor: pointer;"></i>
                     <i class="bi bi-linkedin" style="color: white; cursor: pointer;"></i>
-                    <i class="bi bi-github" style="color: white; cursor: pointer;"></i>
+
+                    <a href="https://github.com/IlmanNafi11" target="#"><i class="bi bi-github" style="color: white; cursor: pointer;"></i></a>
                 </div>
             </div>
         </div>
@@ -225,6 +232,17 @@
     <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     {{-- custom js --}}
     <script src="{{ asset('js/script.js') }}"></script>
+
+    {{-- typed.js --}}
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#subtitle-hero-typed', {
+            strings: ['Mobile and Web Developer.', 'From Sragen, Central Java.'], typeSpeed: 50, loop: Infinity, backSpeed: 40, backDelay: 1000,
+        })
+    </script>
+
+
 </body>
 
 </html>
