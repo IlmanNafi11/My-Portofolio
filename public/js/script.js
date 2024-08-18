@@ -24,3 +24,27 @@ document.getElementById('toggle-menu').addEventListener('click', function() {
         }, navItems.length * 200 + 300);
     }
 });
+
+// mengatur offset on scroll
+
+document.querySelectorAll('.nav-item a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 50;
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = target.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
+// menambahkan aos ke setiap element
+
+
+
