@@ -31,6 +31,13 @@
 <body>
     {{-- Container --}}
     <div class="container-fluid p-0 m-0 main-container">
+        {{-- Overlay --}}
+        <div id="overlay" class="container-fluid p-0 m-0 overlay d-flex justify-content-center align-items-center">
+            <div id="loader" class="loader d-inline-block position-relative overflow-hidden">
+            </div>
+        </div>
+
+        {{-- Navbar --}}
         <nav class="navbar fixed-top m-0 justify-content-between py-0">
             <div class="main-logo">
                 <a href="#" class="navbar-brand text-white">ILMAN</a>

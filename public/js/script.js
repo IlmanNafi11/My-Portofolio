@@ -1,3 +1,21 @@
+// hidden overlay
+document.addEventListener("DOMContentLoaded", function() {
+    const loader = document.getElementById("loader");
+    const overlay = document.getElementById("overlay");
+
+    loader.addEventListener("animationend", function() {
+        loader.classList.add("expand");
+
+        setTimeout(function() {
+            loader.classList.add("fade-out");
+        }, 1000);
+
+        setTimeout(function() {
+            overlay.classList.add("hidden");
+        }, 2000);
+    });
+});
+
 // Navbar
 document.getElementById('toggle-menu').addEventListener('click', function() {
     this.classList.toggle('active');
@@ -31,7 +49,7 @@ document.querySelectorAll('.nav-item a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        const offset = 50;
+        const offset = 350;
         const bodyRect = document.body.getBoundingClientRect().top;
         const elementRect = target.getBoundingClientRect().top;
         const elementPosition = elementRect - bodyRect;
