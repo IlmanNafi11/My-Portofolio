@@ -155,14 +155,14 @@
                 <p class="main-section-content text-white">Check out my latest project</p>
                 <div class="group-box-project d-flex flex-row row-gap-4 flex-wrap justify-content-between text-center">
                     <div class="project-item rounded position-relative overflow-hidden p-0 m-0" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
-                        <img src="{{ asset('img/card-1.jpg') }}" alt="project-images" class="img-fluid">
+                        <img src="{{ asset('img/project-img/abbie-communications.png') }}" alt="abbie-communication" class="img-fluid">
                         <div class="caption-project position-absolute d-flex flex-column justify-content-center align-items-center top-0 left-0">
-                            <span class="header-project text-white">Finansial Managemen Application UD SUMBER AGUNG</span>
+                            <span class="header-project text-white">Abbie Communication Counter Cashier Application</span>
                             <p class="subtitle-project text-white">Desktop based application</p>
                         </div>
                     </div>
                     <div class="project-item rounded position-relative overflow-hidden p-0 m-0" data-aos="flip-right" data-aos-duration="500" data-aos-delay="300">
-                        <img src="{{ asset('img/card-1.jpg') }}" alt="project-images" class="img-fluid">
+                        <img src="{{ asset('img/project-img/ud-sumber-agung.png') }}" alt="ud-sumber-agung" class="img-fluid">
                         <div class="caption-project position-absolute d-flex flex-column justify-content-center align-items-center top-0 left-0">
                             <span class="header-project text-white">Finansial Managemen Application UD SUMBER AGUNG</span>
                             <p class="subtitle-project text-white">Desktop based application</p>
@@ -206,9 +206,9 @@
                 <div class="container-contact-content d-flex justify-content-between">
                     <div class="subtitle-contact d-flex flex-column row-gap-2 w-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                         <span class="sub-street"><a href="#" class="text-decoration-none text-white">Masaran, Sragen, Central Java</a></span>
-                        <span class="sub-street"><a href="https://api.whatsapp.com/send/?phone=6287831620075&text&type=phone_number&app_absent=0" class="text-decoration-none text-white" target="#">+62-8232-0865-098</a></span>
+                        <span class="sub-street"><a href="https://api.whatsapp.com/send/?phone=6287831620075&text&type=phone_number&app_absent=0" class="text-decoration-none text-white" target="#">+62-8783-1620-075</a></span>
                         <span class="sub-street"><a href="#" class="text-decoration-none text-white">ilmannafi04@gmail.com</a></span>
-                        <span class="sub-street"><a href="#" class="text-decoration-none text-white">@ilmannafi4</a></span>
+                        <span class="sub-street"><a href="https://www.instagram.com/ilmannafi4?igsh=MW95M3JyMXEyeHBzaA==" class="text-decoration-none text-white" target="#">@ilmannafi4</a></span>
                     </div>
                     <form class="form-contact d-flex flex-column row-gap-3 w-100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                         <div class="form-bio d-flex justify-content-between column-gap-4">
@@ -229,10 +229,9 @@
                     <span>Copyright &copy; 2024. All Rights are Reserved</span>
                 </div>
                 <div class="sub-social-icon d-flex column-gap-2">
-                    <i class="bi bi-instagram" style="color: white; cursor: pointer;"></i>
-                    <i class="bi bi-threads" style="color: white; cursor: pointer;"></i>
-                    <i class="bi bi-linkedin" style="color: white; cursor: pointer;"></i>
-
+                    <a href="https://www.instagram.com/ilmannafi4?igsh=MW95M3JyMXEyeHBzaA==" target="#"><i class="bi bi-instagram" style="color: white; cursor: pointer;"></i></a>
+                    <a href="#" target="#"><i class="bi bi-threads" style="color: white; cursor: pointer;"></i></a>
+                    <a href="#" target="#"><i class="bi bi-linkedin" style="color: white; cursor: pointer;"></i></a>
                     <a href="https://github.com/IlmanNafi11" target="#"><i class="bi bi-github" style="color: white; cursor: pointer;"></i></a>
                 </div>
             </div>
